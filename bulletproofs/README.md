@@ -158,7 +158,10 @@ rustup default nightly
 ## Tests and Benchmarks
 
 Run tests with `cargo test`.  Run benchmarks with `cargo bench`.  This crate
-uses [criterion.rs][criterion] for benchmarks. 
+uses [criterion.rs][criterion] for benchmarks. Be sure to run these commands
+from this `bulletproofs` directory (the crate root). Running them inside the
+`benches/` directory will cause Cargo to fall back to the parent project and
+fail on older toolchains.
 
 ## Features
 
