@@ -1,0 +1,49 @@
+[package]
+name    = "merkle"
+version = "1.11.1-pre"
+authors = [
+  "Frederic Jacobs <me@fredericjacobs.com>",
+  "Dylan Bourgeois <dtsbourg@gmail.com>",
+  "Romain Ruetschi <romain.ruetschi@gmail.com>"
+]
+
+edition       = "2018"
+description   = "Merkle tree implementation with support for generation of inclusion proofs."
+license       = "BSD-3-Clause"
+documentation = "https://docs.rs/merkle"
+homepage      = "https://github.com/SpinResearch/merkle.rs"
+repository    = "https://github.com/SpinResearch/merkle.rs"
+readme        = "README.md"
+keywords      = ["merkle", "merkle-tree"]
+categories    = ["data-structures", "cryptography"]
+
+[package.metadata.release]
+sign-commit                 = true
+sign-tag                    = true
+pre-release-commit-message  = "Release version {{version}}."
+post-release-commit-message = "Start next development iteration {{version}}."
+tag-message                 = "Release version {{version}}."
+dev-version-ext             = "pre"
+
+[[bench]]
+name    = "proof"
+harness = false
+
+[dependencies]
+ring         = "0.16.15"
+protobuf     = { version = "2.16.2",  optional = true }
+serde        = { version = "1.0.114", optional = true }
+serde_derive = { version = "1.0.114", optional = true }
+
+[build-dependencies]
+protoc-rust = { version = "2.16.2", optional = true }
+
+[dev-dependencies]
+serde_json = "1.0.56"
+criterion  = "0.3.3"
+rand       = "0.7.3"
+
+[features]
+serialization-protobuf = [ "protobuf", "protoc-rust" ]
+serialization-serde    = [ "serde", "serde_derive" ]
+
