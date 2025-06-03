@@ -1,5 +1,6 @@
 [project]
 name = "bm-poc"
+version = "0.1.0"
 dependencies = ["py_ecc~=7.0.0"]
 
 [build-system]
