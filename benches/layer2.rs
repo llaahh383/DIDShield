@@ -10,7 +10,7 @@ use futures_util::FutureExt;
 use libsignal_protocol::*;
 use rand::rngs::OsRng;
 
-#[path = "../tests/support/mod.rs"]
+#[path = "../lib/libsignal/rust/protocol/tests/support/mod.rs"]
 mod support;
 
 pub fn session_encrypt_result(c: &mut Criterion) -> Result<(), SignalProtocolError> {
