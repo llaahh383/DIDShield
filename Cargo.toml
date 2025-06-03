@@ -13,8 +13,13 @@ lazy_static = "1.4"
 criterion = "0.4"
 hex = "0.4"
 vrf = { path = "vrf-rs" }
+did-key = { path = "did-key.rs" }
 
 [[bench]]
 name = "vrf"
+harness = false
+
+[[bench]]
+name = "did_generation"
 harness = false
 
