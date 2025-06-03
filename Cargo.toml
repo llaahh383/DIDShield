@@ -23,3 +23,7 @@ harness = false
 name = "did_generation"
 harness = false
 
+[[bench]]
+name = "layer1"
+harness = false
+

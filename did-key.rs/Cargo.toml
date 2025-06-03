@@ -21,7 +21,7 @@ sha2 = "0.9"
 getrandom = { version = "0.2", features = ["js"] }
 hkdf = "0.11"
 arrayref = "0.3"
-did_url = { version = "0.1.0", features = ["alloc"] }
+did_url = { version = "0.1.0", features = ["alloc", "std"] }
 serde = "1.0"
 serde_json = "1.0"
 base64 = "0.13"
