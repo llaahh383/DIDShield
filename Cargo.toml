@@ -13,3 +13,8 @@ lazy_static = "1.4"
 criterion = "0.4"
 hex = "0.4"
 vrf = { path = "vrf-rs" }
+
+[[bench]]
+name = "vrf"
+harness = false
+
