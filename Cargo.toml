@@ -38,3 +38,6 @@ harness = false
 name = "cred-issue"
 harness = false
 
+[[bench]]
+name = "app-issue"
+harness = false
