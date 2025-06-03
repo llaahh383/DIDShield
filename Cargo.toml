@@ -37,3 +37,7 @@ harness = false
 [[bench]]
 name = "systemSetup"
 harness = false
+
+[[bench]]
+name = "system-setup"
+harness = false
