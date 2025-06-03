@@ -49,3 +49,8 @@ harness = false
 [[bench]]
 name = "app-issue"
 harness = false
+
+[[bench]]
+name = "groth16"
+harness = false
+
