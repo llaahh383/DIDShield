@@ -1,0 +1,27 @@
+# Ignore Rust build artifacts
+/target/
+
+# Ignore core dumps
+**/*.dmp
+
+# Ignore Python virtual environments
+bm-poc/py/.venv/
+**/.venv/
+**/venv/
+**/env/
+
+# Ignore common compiled binaries and libraries
+*.so
+*.dll
+*.dylib
+*.exe
+*.a
+*.lib
+*.o
+*.obj
+*.class
+
+# Misc
+*.pyc
+__pycache__/
+.DS_Store
