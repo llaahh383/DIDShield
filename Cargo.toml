@@ -41,3 +41,8 @@ harness = false
 [[bench]]
 name = "system-setup"
 harness = false
+
+[[bench]]
+name = "cred-issue"
+harness = false
+
