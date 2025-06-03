@@ -40,7 +40,3 @@ fluid = "0.4"
 [[bench]]
 name = "my_benchmark"
 harness = false
-
-[[bench]]
-name = "basic_ops"
-harness = false
