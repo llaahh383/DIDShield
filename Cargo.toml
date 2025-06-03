@@ -23,19 +23,11 @@ name = "vrf"
 harness = false
 
 [[bench]]
-name = "did_generation"
-harness = false
-
-[[bench]]
 name = "layer1"
 harness = false
 
 [[bench]]
 name = "layer2"
-harness = false
-
-[[bench]]
-name = "systemSetup"
 harness = false
 
 [[bench]]
