@@ -17,6 +17,17 @@ vrf = { path = "vrf-rs" }
 did-key = { path = "did-key.rs" }
 libsignal-protocol = { path = "lib/libsignal/rust/protocol" }
 futures-util = "0.3"
+ark-ff = "0.5"
+ark-ec = "0.5"
+ark-serialize = { version = "0.5", features = ["derive"] }
+ark-poly = "0.5"
+ark-std = "0.5"
+ark-relations = "0.5"
+ark-crypto-primitives = { version = "0.5", features = ["snark"] }
+ark-groth16 = "0.5"
+ark-bls12-381 = { version = "0.5", features = ["curve"] }
+ark-mnt4-298 = { version = "0.5", features = ["curve"] }
+ark-mnt6-298 = "0.5"
 
 [[bench]]
 name = "vrf"
@@ -40,9 +51,5 @@ harness = false
 
 [[bench]]
 name = "app-issue"
-harness = false
-
-[[bench]]
-name = "groth16"
 harness = false
 
