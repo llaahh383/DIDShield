@@ -11,7 +11,7 @@ The `examples/anvil_publish.rs` program uses the default Anvil devnet RPC
 
 ```bash
 anvil &
-cargo run --example anvil_publish
+cargo run --manifest-path src/layer1/Cargo.toml --example anvil_publish
 ```
 
 The program will publish the DID Document as a transaction and print the gas
