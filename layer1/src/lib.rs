@@ -66,7 +66,7 @@ impl Layer1Entity {
         for num in 0..=latest {
             if let Some(block) = provider.get_block_with_txs(num).await? {
                 for tx in block.transactions {
-                    let data = tx.input.0;
+                    let data = tx.input.0.to_vec();
                     if let Ok(text) = String::from_utf8(data.clone()) {
                         if text.contains(did) {
                             if let Ok(doc) = serde_json::from_slice::<serde_json::Value>(&data) {
