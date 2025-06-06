@@ -16,7 +16,8 @@ impl Layer1Entity {
 
     /// Return the DID Document associated with this entity's key.
     pub fn did_document(&self) -> serde_json::Value {
-        self.key_pair.get_did_document(Config::default())
+        serde_json::to_value(self.key_pair.get_did_document(Config::default()))
+            .expect("failed to convert document to JSON value")
     }
 
     /// Publish the DID Document to an Ethereum network and return the gas used.
