@@ -25,4 +25,4 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         println!("Document not found on chain");
     }
     Ok(())
-}
+
