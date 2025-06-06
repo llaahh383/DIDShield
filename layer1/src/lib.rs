@@ -1,4 +1,4 @@
-use did_key::{generate, Ed25519KeyPair, PatchedKeyPair, Config};
+use did_key::{generate, Ed25519KeyPair, PatchedKeyPair, Config, DIDCore};
 use ethers::prelude::*;
 use std::convert::TryFrom;
 
